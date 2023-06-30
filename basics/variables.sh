@@ -1,5 +1,5 @@
 #!/bin/bash
 
-name=Srikanth
-
-echo "My name is $name"
+name=$1
+company=$2
+echo "My name is $1. I work at $2"
