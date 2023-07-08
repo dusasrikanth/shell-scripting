@@ -10,24 +10,21 @@
 #####################
 
 
-# Script should be executed with root access.
-
+#Script should be executed with root access.
 if [[ "${UID}" -ne 0 ]]
 then
 	echo "Please run the script with sudo/root"
 	exit 1
 fi
 
-# Check whether two arguments are supplied.
-
+#Check whether two arguments are supplied.
 if [[ "${#}" -lt 2 ]]
 then
 	echo "Usage: sh ${0} USER_NAME"
 	exit 1
 fi
 
-# Set required variables
-
+#Set required variables
 USER_NAME=${1} #Username of the user to be created.
 
 shift
