@@ -9,7 +9,6 @@
 #
 #This script displays the operating system details.
 
-set -e #Ext if any errors.
 
 echo
 echo "Printing OS info.."
