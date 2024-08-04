@@ -11,17 +11,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello:
+  job-1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: hell-world
-        run: echo "Hello world!!"
+      - name: JOB 1 Starts...
+        run: echo "JOB 1 is running..."
         shell: bash
   
-  goodbye:
+  job-2:
     runs-on: ubuntu-latest
     steps:
-      - name: goodbye-world
-        run: echo "Goodbye!!!"
+      - name: JOB 2 starts...
+        run: echo "JOB 2 is running..."
         shell: bash
