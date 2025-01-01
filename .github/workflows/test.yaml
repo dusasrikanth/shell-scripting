@@ -1,27 +1,27 @@
-name: test-workflow
+# name: test-workflow
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
 
-  workflow_dispatch:
+#   workflow_dispatch:
 
-jobs:
-  job-1:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: JOB 1 Starts...
-        run: echo "JOB 1 is running..."
-        shell: bash
+# jobs:
+#   job-1:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: JOB 1 Starts...
+#         run: echo "JOB 1 is running..."
+#         shell: bash
   
-  job-2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: JOB 2 starts...
-        run: echo "JOB 2 is running..."
-        shell: bash
+#   job-2:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: JOB 2 starts...
+#         run: echo "JOB 2 is running..."
+#         shell: bash
