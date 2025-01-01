@@ -17,7 +17,7 @@ DEST_DIR=/home/srikanth/desktop/scripts/shell-scripting/backups
 #Check if the base directory exist or not.
 if [[ ! -d ${BASE_DIR} ]]
 then
-        echo "${BASE_DIR} not exist."
+		echo "${BASE_DIR} does not exist."
         exit 1
 fi
 
